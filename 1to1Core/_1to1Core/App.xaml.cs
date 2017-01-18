@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using _1to1Core.Views;
 
 namespace _1to1Core
 {
@@ -32,10 +33,12 @@ namespace _1to1Core
 
             var menuPage 	= new MenuPage();
 
-			// This page is the first thing loaded
-            NavigationPage 	= new NavigationPage(new LandingPage());
+            // This page is the first thing loaded
+            //NavigationPage 	= new NavigationPage(new LandingPage());
 
-			// Master container to hold everything
+            NavigationPage = new NavigationPage(new WebPageView());
+
+            // Master container to hold everything
             RootPage 		= new RootPage();
             RootPage.Master = menuPage;
 

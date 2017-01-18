@@ -27,9 +27,11 @@ namespace _1to1Core
         }
 
 
-        
 
-        void OnItemTapped(object sender, ItemTappedEventArgs e)
+
+
+
+	    void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e == null) return; // has been set to null, do not 'process' tapped event'
             ((ListView)sender).SelectedItem = null; // de-select the row
