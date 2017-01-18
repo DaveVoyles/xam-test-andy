@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_1to1Core.LandingPage"
+             xmlns:local="clr-namespace:_1to1Core;"> <!-- Not sure of what this does - DV> -->
+    <ContentPage.Content>
+		<ListView x:Name="listView" ItemTapped="OnItemTapped">
+		    <ListView.ItemTemplate>
+      			<DataTemplate>
+      			  <TextCell Text="{Binding DeviceId}" />
+      			</DataTemplate>
+    		</ListView.ItemTemplate>
+		</ListView>
+    </ContentPage.Content>
+
+</ContentPage>
