@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_1to1Core.LandingPage"
              xmlns:local="clr-namespace:_1to1Core;"> <!-- Not sure of what this does - DV> -->
-    <ContentPage.Content>
-		<ListView x:Name="listView" ItemTapped="OnItemTapped">
-		    <ListView.ItemTemplate>
-      			<DataTemplate>
-      			  <TextCell Text="{Binding DeviceId}" />
-      			</DataTemplate>
-    		</ListView.ItemTemplate>
-		</ListView>
-    </ContentPage.Content>
-
+  <ContentPage.Content>
+      <StackLayout>
+        <Label Text="Welcome to Wing" FontSize="24" TextColor="Green" HorizontalTextAlignment="Center"></Label>
+        <Label Text="A dedicated space where patients can become more involved during clinical trials" FontSize="12" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
+        <Button Text="Log In" TextColor="White" BackgroundColor="Green"></Button>
+        <Button Text="Sign Up" TextColor="Green" BackgroundColor="White" BorderColor="Green"></Button>
+        <Label Text="Skip this, I just want to search for trials" TextColor="Green" HorizontalTextAlignment="Center" ></Label>
+    
+      </StackLayout>
+  </ContentPage.Content>
 </ContentPage>
