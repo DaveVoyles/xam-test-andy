@@ -30,37 +30,55 @@ namespace _1to1Core.Views
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
 
+            // BACK BUTTON & HANDLER
+            Button backButton = new Button()
+            {
+                Text = "Back",
+                HorizontalOptions = LayoutOptions.Start
+            };
+
+            backButton.Clicked += delegate
+		    {
+                // Check to see if there is anywhere to go back to
+                if (webView.CanGoBack)
+                {
+                    webView.GoBack();
+                }
+                else
+                { // If not, leave the view
+                    Navigation.PopAsync();
+                }
+            };
+
+
+            // FORWARD BUTTON & HANDLER
+            Button forwardButton = new Button()
+            {
+                Text = "Forwrad",
+                HorizontalOptions = LayoutOptions.End
+                // TODO: Figure out why button does not align with back button on UI
+            };
+
+            forwardButton.Clicked += delegate
+            {
+                if (webView.CanGoForward)
+                {
+                    webView.GoForward();
+                }
+            };
+
             // Build the page and add it to the XAML
             this.Content = new StackLayout
             {
                 Children =
                 {
                     header,
-                    webView
+                    webView,
+                    backButton,
+                    forwardButton
                 }
             };
         }
 
-
-        private void backClicked(object sender, EventArgs e)
-        {
-            // Check to see if there is anywhere to go back to
-            if (Browser.CanGoBack)
-            {
-                Browser.GoBack();
-            }
-            else
-            { // If not, leave the view
-                Navigation.PopAsync();
-            }
-        }
-
-        private void forwardClicked(object sender, EventArgs e)
-        {
-            if (Browser.CanGoForward)
-            {
-                Browser.GoForward();
-            }
-        }
     }
 }
