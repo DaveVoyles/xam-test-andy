@@ -16,6 +16,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\IMetricsManagerService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\CrossHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RequestObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StarWarsObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MenuPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\MenuPage.xaml.cs">
       <SubType>Code</SubType>
@@ -42,6 +44,7 @@
       <DependentUpon>WebPageView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)WebRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
