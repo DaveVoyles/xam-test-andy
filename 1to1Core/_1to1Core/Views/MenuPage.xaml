@@ -7,9 +7,8 @@
   </ContentPage.Padding>
   <ContentPage.Content>
     <StackLayout BackgroundColor="#F2F2F2" Padding="12">
-      <Button Text="Home" TextColor="White" BackgroundColor="Gray" Command="{Binding GoHomeCommand}" />
-      <Button Text="Settings" TextColor="White" BackgroundColor="Gray" Command="{Binding GoSettingsCommand}" />
-<!--	  <Button Text="File" TextColor="White" BackgroundColor="Gray" Command="{Binding GoFileCommand}" />-->
+      <Button Text="Home"     TextColor="White" BackgroundColor="Green" Command="{Binding GoHomeCommand}" />
+      <Button Text="WebView" TextColor="White" BackgroundColor="Green" Command="{Binding GoWebViewCommand}" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

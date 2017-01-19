@@ -34,9 +34,7 @@ namespace _1to1Core
             var menuPage 	= new MenuPage();
 
             // This page is the first thing loaded
-            //NavigationPage 	= new NavigationPage(new LandingPage());
-
-            NavigationPage = new NavigationPage(new WebPageView());
+            NavigationPage 	= new NavigationPage(new LandingPage());
 
             // Master container to hold everything
             RootPage 		= new RootPage();

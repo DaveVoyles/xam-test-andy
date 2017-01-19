@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
 namespace _1to1Core.Views
@@ -13,10 +8,10 @@ namespace _1to1Core.Views
 		public WebPageView ()
 		{
 			InitializeComponent ();
-            var browser = new WebView
-            {
-                Source = "http://xamarin.com"
-            };
+            //var browser = new WebView
+            //{
+            //    Source = "http://xamarin.com"
+            //};
         }
 
 

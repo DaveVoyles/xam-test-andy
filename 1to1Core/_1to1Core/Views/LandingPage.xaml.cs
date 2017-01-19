@@ -15,6 +15,8 @@ namespace _1to1Core
 
         public LandingPage()
         {
+            BindingContext = new LandingPageViewModel();
+            Title = "Landing Page";
             InitializeComponent();
 
             // Set data to the listview 
@@ -25,11 +27,6 @@ namespace _1to1Core
             // TODO: Hockeyapp SDK has issues with iOS 10.x simulator. It works, but check log for issue
             HockeyApp.MetricsManager.TrackEvent("Loaded Landing Page");
         }
-
-
-
-
-
 
 	    void OnItemTapped(object sender, ItemTappedEventArgs e)
         {

@@ -156,22 +156,34 @@
     <AndroidResource Include="Resources\Drawable\notes.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\finaeos_logo_dark_600px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\drawable-hdpi\group_4.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\group_4.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Drawable\drawable-mdpi\" />
-    <Folder Include="Resources\Drawable\drawable-xhdpi\" />
-    <Folder Include="Resources\Drawable\drawable-xxhdpi\" />
-    <Folder Include="Resources\Drawable\drawable-xxxhdpi\" />
+    <AndroidResource Include="Resources\Drawable\magnifying_glass.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\group_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\pill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\magnifying_glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\pill.png" />
   </ItemGroup>
   <Import Project="..\_1to1Core\_1to1Core.projitems" Label="Shared" Condition="Exists('..\_1to1Core\_1to1Core.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

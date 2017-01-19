@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_1to1Core.Views.SelectionPage">
+
+   <StackLayout>
+    <Label Text="I'm searching for a trial to participate in" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Image Source="magnifying_glass.png"></Image>
+  </StackLayout>
+  
+  <StackLayout Padding="0,5,0,0">
+    <Label Text="I'm enrolled in a trial by Wing"  TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Image Source="pill.png"></Image>
+  </StackLayout>
+
+</ContentPage>
