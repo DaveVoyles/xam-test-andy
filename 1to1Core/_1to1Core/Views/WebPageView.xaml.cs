@@ -5,13 +5,43 @@ namespace _1to1Core.Views
 {
 	public partial class WebPageView : ContentPage
 	{
-		public WebPageView ()
+        private WebView webView;
+
+        private const string URL = "https://www.google.com";
+
+
+        public WebPageView ()
 		{
-			InitializeComponent ();
-            //var browser = new WebView
-            //{
-            //    Source = "http://xamarin.com"
-            //};
+
+            // PRoperties for the header label
+            Label header = new Label
+            {
+                Text              = "WebView",
+                FontSize          = 50,
+                FontAttributes    = FontAttributes.Bold,
+                HorizontalOptions = LayoutOptions.Center
+            };
+
+            // Create a new webview and point it at URL.
+            // MUST use FillAndExpand, otherwise page will not display
+            WebView webView = new WebView
+            {
+                Source = new UrlWebViewSource
+                {
+                    Url = "https://blog.xamarin.com/",
+                },
+                VerticalOptions = LayoutOptions.FillAndExpand
+            };
+
+            // Build the page and add it to the XAML
+            this.Content = new StackLayout
+            {
+                Children =
+                {
+                    header,
+                    webView
+                }
+            };
         }
 
 
