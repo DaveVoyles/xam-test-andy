@@ -5,14 +5,11 @@ namespace _1to1Core.Views
 {
 	public partial class WebPageView : ContentPage
 	{
-        private WebView webView;
-
-        private const string URL = "https://www.google.com";
-
-
+        /// <summary>
+        /// Working sample found here: https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/WebViewDemoPage.cs
+        /// </summary>
         public WebPageView ()
 		{
-
             // PRoperties for the header label
             Label header = new Label
             {
