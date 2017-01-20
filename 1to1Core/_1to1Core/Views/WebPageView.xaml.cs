@@ -54,7 +54,7 @@ namespace _1to1Core.Views
             // FORWARD BUTTON & HANDLER
             Button forwardButton = new Button()
             {
-                Text = "Forwrad",
+                Text = "Forward",
                 HorizontalOptions = LayoutOptions.End
                 // TODO: Figure out why button does not align with back button on UI
             };

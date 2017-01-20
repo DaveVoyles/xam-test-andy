@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalTrax.MenuPage">
+  <!--<Label Text="Menu Page" VerticalOptions="Center" HorizontalOptions="Center" />-->
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout BackgroundColor="Gray" Padding="12">
+      <Button Text="Home"        TextColor="White" BackgroundColor="Gray" Command="{Binding GoHomeCommand}" />
+      <Button Text="Second Page" TextColor="White" BackgroundColor="Gray"  Command="{Binding GoSecondCommand}" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

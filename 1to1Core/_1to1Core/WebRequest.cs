@@ -23,7 +23,7 @@ namespace _1to1Core
         public void makeWebRequest(string endPoint, string requestUrl)
         {
             var client  = new RestClient(endPoint);
-            var request = new RestRequest(requestUrl, Method.POST);
+            var request = new RestRequest(requestUrl, Method.GET);
 
             // Automatically deserialize result
             IRestResponse<RequestObject> response = client.Execute<RequestObject>(request);

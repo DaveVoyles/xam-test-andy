@@ -6,12 +6,12 @@
       <StackLayout >
           <Label Text="Welcome to Wing" FontSize="24" TextColor="Green" HorizontalTextAlignment="Center" ></Label>  
           <Image Scale="0.5" Source="group_4.png"></Image>
-        <Label Text="A dedicated space where patients can become more involved during clinical trials" FontSize="12" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
+         <Label Text="A dedicated space where patients can become more involved during clinical trials" FontSize="12" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
           <StackLayout Padding="0,0,0,0">
-          <Button Text="Log In" TextColor="White" BackgroundColor="Green" HorizontalOptions="Center"  WidthRequest="300" Command="{Binding GoSelectionPageCommand}"  ></Button>
-          <Button Text="Sign Up" TextColor="Green" BackgroundColor="White" BorderColor="Green" HorizontalOptions="Center"
-                  WidthRequest="300">
-          </Button>
+             <Button Text="Log In" TextColor="White" BackgroundColor="Green" HorizontalOptions="Center"  WidthRequest="300" Command="{Binding GoSelectionPageCommand}"  ></Button>
+              <Button Text="Sign Up" TextColor="Green" BackgroundColor="White" BorderColor="Green" HorizontalOptions="Center"
+                 WidthRequest="300">
+              </Button>
             <StackLayout Padding="0,5,0,5" >
               <Label Text="Skip this, I just want to search for trials" TextColor="Green" HorizontalTextAlignment="Center" ></Label>
            </StackLayout>
