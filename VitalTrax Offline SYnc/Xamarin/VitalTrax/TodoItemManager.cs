@@ -62,7 +62,7 @@ namespace VitalTrax
             // Initializes the SyncContext using the default IMobileServiceSyncHandler.
             this.client.SyncContext.InitializeAsync(store);
 
-            // Wses the local database for all create, read, update, and delete(CRUD) table operations.
+            // Uses the local database for all create, read, update, and delete(CRUD) table operations.
             this.todoTable = client.GetSyncTable<TodoItem>();
 #else
             this.todoTable = client.GetTable<TodoItem>();

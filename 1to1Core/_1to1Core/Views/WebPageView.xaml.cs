@@ -10,7 +10,7 @@ namespace _1to1Core.Views
         /// </summary>
         public WebPageView ()
 		{
-            // PRoperties for the header label
+            // Properties for the header label
             Label header = new Label
             {
                 Text              = "WebView",
